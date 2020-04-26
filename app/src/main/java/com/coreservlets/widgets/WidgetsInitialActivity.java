@@ -29,5 +29,21 @@ public class WidgetsInitialActivity extends Activity {
     	Intent in = new Intent(this, SpinnerActivity.class);
         startActivity(in);
     }
+
+    /** Canvia a el ListView activity quan es clica el botó **/
+
+    public void muestraListView(View clickedButton){
+        Intent in = new Intent(this, ListViewActivity.class);
+        startActivity(in);
+    }
+
+    /** Canviar a GridView activity quan es clica el botó **/
+
+    public void muestraGridView(View clickedButton){
+        Intent in = new Intent(this, GridViewActivity.class);
+        startActivity(in);
+    }
+
+
     
 }

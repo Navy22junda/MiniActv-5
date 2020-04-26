@@ -53,13 +53,13 @@ public class SpinnerActivity extends Activity {
     
     private class SpinnerInfo implements OnItemSelectedListener {
         private boolean isFirst = true;
-        
+
         /** Shows a Toast for the selected item. Ignored the very first time,
          *  which is when the item is selected on initial display, rather than
          *  by user interaction.
          */
         @Override
-        public void onItemSelected(AdapterView<?> spinner, View selectedView, 
+        public void onItemSelected(AdapterView<?> spinner, View selectedView,
                                    int selectedIndex, long id) {
             if (isFirst) {
                 isFirst = false;
